@@ -91,21 +91,27 @@
             Balance: <span id="balance-total">4500</span>
           </h4>
           <p class="text-center mt-3">
-            save: <input class="bg-inputBG py-2 mr-1" type="number" /> %
-            <button class="bg-sky-500 px-6 py-3 text-white rounded ml-1">
+            save:
+            <input id="save-field" class="bg-inputBG py-2 mr-1" type="number" />
+            %
+            <button
+              id="btn-save"
+              class="bg-sky-500 px-6 py-3 text-white rounded ml-1"
+            >
               save
             </button>
           </p>
           <h4 class="font-robota text-xl mt-3 text-center">
-            Saving Amount : <span>2000</span>
+            Saving Amount : <span id="saving-amount">2000</span>
           </h4>
           <h4 class="font-robota text-xl mt-3 text-center">
-            Remaining Balance: <span>2500</span>
+            Remaining Balance: <span id="remaining-balance">2500</span>
           </h4>
         </div>
       </section>
     </main>
     <script src="js/utilities.js"></script>
+    <script src="js/savingRemainBalance.js"></script>
     <script src="js/ExpenseBalance.js"></script>
   </body>
 </html>
