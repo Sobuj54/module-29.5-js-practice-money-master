@@ -48,32 +48,47 @@
           <!-- income input field -->
           <div class="w-1/2 mx-auto mt-3">
             <p class="inline-block text-lg">Income:</p>
-            <input class="bg-inputBG ml-3" type="text" />
+            <input id="income-field" class="bg-inputBG ml-3" type="text" />
           </div>
           <!-- expenses -->
           <h5 class="text-2xl text-center mt-4">Expenses</h5>
           <div class="w-1/2 mx-auto">
             <p class="text-lg mt-3">
-              Food:<input class="bg-inputBG ml-3" type="text" />
+              Food:<input
+                id="food-expense"
+                class="bg-inputBG ml-3"
+                type="text"
+              />
             </p>
             <p class="text-lg mt-3">
-              Rent:<input class="bg-inputBG ml-3" type="text" />
+              Rent:<input
+                id="rent-expense"
+                class="bg-inputBG ml-3"
+                type="text"
+              />
             </p>
             <p class="text-lg mt-3">
-              Clothes:<input class="bg-inputBG ml-3" type="text" />
+              Clothes:<input
+                id="cloth-expense"
+                class="bg-inputBG ml-3"
+                type="text"
+              />
             </p>
           </div>
           <!-- calculate button -->
           <div class="mt-3 text-center">
-            <button class="bg-sky-500 px-6 py-3 text-white rounded">
+            <button
+              id="btn-calculate"
+              class="bg-sky-500 px-6 py-3 text-white rounded"
+            >
               Calculate
             </button>
           </div>
           <h4 class="font-roboto text-xl text-center mt-4">
-            Total Expense: <span>5500</span>
+            Total Expense: <span id="total-expense">5500</span>
           </h4>
           <h4 class="font-roboto text-xl text-center mt-4">
-            Balance: <span>4500</span>
+            Balance: <span id="balance-total">4500</span>
           </h4>
           <p class="text-center mt-3">
             save: <input class="bg-inputBG py-2 mr-1" type="number" /> %
@@ -90,5 +105,7 @@
         </div>
       </section>
     </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/ExpenseBalance.js"></script>
   </body>
 </html>
